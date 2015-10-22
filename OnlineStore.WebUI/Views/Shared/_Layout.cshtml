@@ -3,9 +3,22 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Easy Rider</title>   
+    <title>@ViewBag.Title - Easy Rider</title>  
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
 </head>
 <body>
-    @RenderBody()
+    <div class="navbar navbar-inverse" role="navigation">
+        <a class="navbar-brand" href="#">Easy Rider Shop</a>
+    </div>
+    <div class="row panel">
+        <div id="categoris" class="col-lg-3">
+            Categories
+        </div>
+        <div class="col-lg-7">
+            @RenderBody()
+        </div>
+    </div>    
 </body>
 </html>
