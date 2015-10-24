@@ -3,24 +3,27 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Easy Rider</title>  
+    <title>@ViewBag.Title - Easy Rider Shop</title>
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
     <link href="~/Content/bootstrap-theme.min.css" rel="stylesheet" />
     <link href="~/Content/Site.css" rel="stylesheet" />
 </head>
-<body>    
-    <div class="navbar navbar-inverse" role="navigation">
+<body class="body-content">
+    <div class="navbar navbar-inverse " role="navigation">
+        <a class="navbar-brand" href="#">
+            <span class="hidden-xs">Easy Rider Shop</span>
+            <div class="visible-xs">Easy</div>
+            <div class="visible-xs">Rider Shop</div>
+        </a>
         @Html.Action("Summary", "Cart")
-        <a class="navbar-brand" href="#">Easy Rider Shop</a>
-        
     </div>
     <div class="row panel">
         <div id="categoris" class="col-lg-3">
             @Html.Action("Menu", "Nav")
         </div>
-        <div class="col-lg-7">
+        <div class="col-lg-8">
             @RenderBody()
         </div>
-    </div>    
+    </div>
 </body>
 </html>
