@@ -27,3 +27,7 @@ img {
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
 }
+.conent-left {
+   padding-left: 20px;
+    padding-right: 20px;    
+}
