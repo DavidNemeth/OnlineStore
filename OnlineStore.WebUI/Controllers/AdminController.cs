@@ -67,6 +67,6 @@ namespace OnlineStore.WebUI.Controllers
                 TempData["message"] = string.Format("{0} was deleted",deleteProduct.Name);
             }
             return RedirectToAction("Index");
-        }
+        }        
     }
 }

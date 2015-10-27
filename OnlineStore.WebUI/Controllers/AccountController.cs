@@ -1,4 +1,6 @@
 ﻿using OnlineStore.Domain.Abstract;
+using OnlineStore.Domain.Concrete;
+using OnlineStore.Domain.Entities;
 using OnlineStore.WebUI.Models;
 using System.Web.Mvc;
 using System.Web.Security;
@@ -7,7 +9,7 @@ namespace OnlineStore.WebUI.Controllers
 {
     [Authorize]
     public class AccountController : Controller
-    {
+    {        
         IAuthentication authentication;
         public AccountController(IAuthentication authentication)
         {
@@ -26,7 +28,7 @@ namespace OnlineStore.WebUI.Controllers
             {
                 if (authentication.Authenticate(model.UserName, model.Password))
                 {
-                    FormsAuthentication.SetAuthCookie(model.UserName, false);
+                    System.Web.Security.FormsAuthentication.SetAuthCookie(model.UserName, false);
                     return Redirect(ReturnUrl ?? Url.Action("Index", "Admin"));
                 }
                 else
@@ -38,13 +40,12 @@ namespace OnlineStore.WebUI.Controllers
             else
             {
                 return View();
-            }
-            return View();
+            }            
         }
         public ActionResult Logout()
         {
-            FormsAuthentication.SignOut();
+            System.Web.Security.FormsAuthentication.SignOut();
             return RedirectToAction("List", "Product");
-        }
+        }         
     }
 }

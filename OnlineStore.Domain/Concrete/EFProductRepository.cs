@@ -14,7 +14,7 @@ namespace OnlineStore.Domain.Concrete
         public IEnumerable<Entities.Product> Products
         {
             get { return context.Products; }
-        }
+        }        
 
         public Product DeleteProduct(int productId)
         {
@@ -46,6 +46,6 @@ namespace OnlineStore.Domain.Concrete
                 };
             }
             context.SaveChanges();
-        }
+        }        
     }
 }

@@ -20,9 +20,12 @@
             {
                 <h3>
                     @Html.ActionLink("Online Shopping Store", "List", "Product")
-                <span class="btn-info btn pull-right">
+                <span class="btn-default btn pull-right">
                     @Html.ActionLink(HttpContext.Current.User.Identity.Name + " - Logout", "Logout", "Account")
                 </span>
+                    <span class="btn-default btn pull-right">
+                        @Html.ActionLink("Edit Users", "Index", "Users")
+                    </span>
             </h3>
             }
         }
