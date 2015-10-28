@@ -2,7 +2,9 @@
 Custom OnlineStore with MVC 5.
 
 -Basic CRUD operations
+
 -Simplistic template stlye(will update)
+
 -Admin page for item management
 
 Application uses:
