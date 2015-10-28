@@ -7,10 +7,16 @@ Custom OnlineStore with MVC 5.
 
 Application uses:
 
--MVC5
+-MVC5 
+
 -Entity Framework
+
 -LINQ
+
 -MSSQL
+
 -Ninject
+
 -Bootstrap
+
 -Moq
