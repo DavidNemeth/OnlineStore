@@ -1,16 +1,16 @@
 # OnlineStore
-Custom OnlineStore with MVC 5.
+Custom OnlineStore with asp.net, using mvc pattern.
 
 -Basic CRUD operations
 
--Simplistic template stlye(will update)
+-Simplistic template stlye
 
 -Admin page for item management
 
 
 Application uses:
 
--MVC5 
+-MVC5
 
 -Entity Framework
 
